@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AccesoDatos", "AccesoDatos\AccesoDatos.vbproj", "{E314341D-5F17-44EC-9AAD-56A04EB562BF}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Fabrica", "Fabrica\Fabrica.vbproj", "{7CE85F99-D78F-454E-B2E7-E4D636D25819}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sakura", "Sakura\Sakura.vbproj", "{42B244F0-36D2-41BD-A0B8-323F33A7B380}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Sakura.Azure", "Sakura.Azure\Sakura.Azure.ccproj", "{806DE80B-FD5E-46FC-B70D-7C04284E3D0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BancoAlimentos", "BancoAlimentos\BancoAlimentos.csproj", "{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E314341D-5F17-44EC-9AAD-56A04EB562BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E314341D-5F17-44EC-9AAD-56A04EB562BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E314341D-5F17-44EC-9AAD-56A04EB562BF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E314341D-5F17-44EC-9AAD-56A04EB562BF}.Debug|x86.Build.0 = Debug|Any CPU
+		{E314341D-5F17-44EC-9AAD-56A04EB562BF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E314341D-5F17-44EC-9AAD-56A04EB562BF}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{E314341D-5F17-44EC-9AAD-56A04EB562BF}.Release|x86.ActiveCfg = Release|x86
+		{E314341D-5F17-44EC-9AAD-56A04EB562BF}.Release|x86.Build.0 = Release|x86
+		{7CE85F99-D78F-454E-B2E7-E4D636D25819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE85F99-D78F-454E-B2E7-E4D636D25819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE85F99-D78F-454E-B2E7-E4D636D25819}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7CE85F99-D78F-454E-B2E7-E4D636D25819}.Debug|x86.Build.0 = Debug|Any CPU
+		{7CE85F99-D78F-454E-B2E7-E4D636D25819}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE85F99-D78F-454E-B2E7-E4D636D25819}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7CE85F99-D78F-454E-B2E7-E4D636D25819}.Release|x86.ActiveCfg = Release|x86
+		{7CE85F99-D78F-454E-B2E7-E4D636D25819}.Release|x86.Build.0 = Release|x86
+		{42B244F0-36D2-41BD-A0B8-323F33A7B380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42B244F0-36D2-41BD-A0B8-323F33A7B380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42B244F0-36D2-41BD-A0B8-323F33A7B380}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{42B244F0-36D2-41BD-A0B8-323F33A7B380}.Debug|x86.Build.0 = Debug|Any CPU
+		{42B244F0-36D2-41BD-A0B8-323F33A7B380}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{42B244F0-36D2-41BD-A0B8-323F33A7B380}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{42B244F0-36D2-41BD-A0B8-323F33A7B380}.Release|x86.ActiveCfg = Release|x86
+		{42B244F0-36D2-41BD-A0B8-323F33A7B380}.Release|x86.Build.0 = Release|x86
+		{806DE80B-FD5E-46FC-B70D-7C04284E3D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{806DE80B-FD5E-46FC-B70D-7C04284E3D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{806DE80B-FD5E-46FC-B70D-7C04284E3D0B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{806DE80B-FD5E-46FC-B70D-7C04284E3D0B}.Debug|x86.Build.0 = Debug|Any CPU
+		{806DE80B-FD5E-46FC-B70D-7C04284E3D0B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{806DE80B-FD5E-46FC-B70D-7C04284E3D0B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{806DE80B-FD5E-46FC-B70D-7C04284E3D0B}.Release|x86.ActiveCfg = Release|Any CPU
+		{806DE80B-FD5E-46FC-B70D-7C04284E3D0B}.Release|x86.Build.0 = Release|Any CPU
+		{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}.Debug|x86.Build.0 = Debug|Any CPU
+		{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}.Release|x86.ActiveCfg = Release|Any CPU
+		{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://cloudappstechnologies.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AccesoDatos\\AccesoDatos.vbproj
+		SccProjectName1 = AccesoDatos
+		SccLocalPath1 = AccesoDatos
+		SccProjectUniqueName2 = Fabrica\\Fabrica.vbproj
+		SccProjectName2 = Fabrica
+		SccLocalPath2 = Fabrica
+		SccProjectUniqueName3 = Sakura\\Sakura.vbproj
+		SccProjectName3 = Sakura
+		SccLocalPath3 = Sakura
+		SccProjectUniqueName4 = Sakura.Azure\\Sakura.Azure.ccproj
+		SccProjectName4 = Sakura.Azure
+		SccLocalPath4 = Sakura.Azure
+		SccProjectUniqueName5 = BancoAlimentos\\BancoAlimentos.csproj
+		SccProjectName5 = BancoAlimentos
+		SccLocalPath5 = BancoAlimentos
+	EndGlobalSection
+EndGlobal

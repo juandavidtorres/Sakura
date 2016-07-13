@@ -1,0 +1,109 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPageLogin.master.vb" Inherits="MasterPageLogin" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spyglass version 1.0</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/londinium-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/icons.css" rel="stylesheet" type="text/css">
+    <link href="css/EstiloUtilidades.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+
+    <link href="css/CssBody.css" rel="stylesheet" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/plugins/charts/sparkline.min.js"></script>
+
+    <script type="text/javascript" src="js/plugins/forms/uniform.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/select2.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/inputmask.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/autosize.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/inputlimit.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/listbox.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/multiselect.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/validate.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/tags.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/switch.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/uploader/plupload.full.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/uploader/plupload.queue.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/wysihtml5/wysihtml5.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/wysihtml5/toolbar.js"></script>
+
+
+
+    <script type="text/javascript" src="js/plugins/interface/datatables.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/wysihtml5/toolbar.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize.culture.de-DE.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize.culture.ja-JP.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/daterangepicker.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/fancybox.min.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/moment.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/mousewheel.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/jgrowl.min.js"></script>
+    <script src="js/plugins/interface/datatables.min.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/colorpicker.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/timepicker.min.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/collapsible.min.js"></script>
+    <script src="js/plugins/interface/tabletools.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+    <link href="timePicker.css" rel="stylesheet" />
+    <script src="jquery.timePicker.min.js"></script>
+    <script src="jquery.timepicker.js"></script>
+
+
+
+    <!--jQuery Plugins Declarations-->
+    <script src="js/libs/jquery-1.7.1.min.js"></script>
+    <script src="js/libs/jquery-ui-1.8.17.easing.min.js"></script>
+    <script src="js/libs/rainbow/rainbow.js"></script>
+    <script src="js/libs/rainbow/generic.js"></script>
+    <script src="js/libs/rainbow/javascript.js"></script>
+    <script src="js/libs/rainbow/html.js"></script>
+    <script src="js/libs/moment.min.js"></script>
+
+    <script src="js/noty/jquery.noty.js"></script>
+    <script src="js/noty/layouts/bottom.js"></script>
+    <script src="js/noty/layouts/bottomCenter.js"></script>
+    <script src="js/noty/layouts/bottomLeft.js"></script>
+    <script src="js/noty/layouts/bottomRight.js"></script>
+    <script src="js/noty/layouts/center.js"></script>
+    <script src="js/noty/layouts/centerLeft.js"></script>
+    <script src="js/noty/layouts/centerRight.js"></script>
+    <script src="js/noty/layouts/inline.js"></script>
+    <script src="js/noty/layouts/top.js"></script>
+    <script src="js/noty/layouts/topCenter.js"></script>
+    <script src="js/noty/layouts/topLeft.js"></script>
+    <script src="js/noty/layouts/topRight.js"></script>
+    <script src="js/noty/themes/default.js"></script>
+
+    
+</head>
+
+<body>
+    <!-- Login wrapper -->
+    <div class="login-wrapper">
+        <form id="form1" runat="server">
+            <div class="popup-header">
+                <span class="text-semibold">Inicio de sesion</span>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderLoging" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+    </div>
+    <!-- /login wrapper -->
+
+    <header id="top" class="header2">
+    </header>
+
+  
+</body>
+</html>

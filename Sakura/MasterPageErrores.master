@@ -1,0 +1,166 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPageErrores.master.vb" Inherits="MasterPageErrores" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spyglass version 1.0</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/londinium-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/icons.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/plugins/charts/sparkline.min.js"></script>
+
+    <script type="text/javascript" src="js/plugins/forms/uniform.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/select2.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/inputmask.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/autosize.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/inputlimit.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/listbox.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/multiselect.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/validate.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/tags.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/switch.min.js"></script>
+
+    <script type="text/javascript" src="js/plugins/forms/uploader/plupload.full.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/uploader/plupload.queue.min.js"></script>
+
+    <script type="text/javascript" src="js/plugins/forms/wysihtml5/wysihtml5.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/wysihtml5/toolbar.js"></script>
+
+    <script type="text/javascript" src="js/plugins/interface/daterangepicker.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/fancybox.min.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/moment.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/jgrowl.min.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/datatables.min.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/colorpicker.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/timepicker.min.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/collapsible.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+
+    <script src="js/noty/themes/default.js"></script>
+
+
+
+    <%--<script ="text/javascript" type="text/javascript">
+
+         function CargarValorAsincrono(valor, control) {
+             $(control).val(valor);
+
+         }
+
+
+         function Mensajes(texto, Tipo) {
+             if (Tipo == 1) {
+
+                 generate('error', texto);
+             }
+             else if (Tipo == 0) {
+                 generate('success', texto);
+             }
+         }
+
+         function generate(type, text) {
+             $(document).ready(function () {
+
+                 noty({
+                     layout: 'top',
+                     type: type,
+                     text: text,
+                     dismissQueue: true,
+                     animation: {
+                         open: { height: 'toggle' },
+                         close: { height: 'toggle' },
+                         easing: 'swing',
+                         speed: 300
+                     },
+                     timeout: 7000
+                 });
+             });
+         }
+
+
+         function OcultarModal(Tipo, Operacion) {
+             if (Operacion == 1)
+                 $(Tipo).modal('show');
+             else
+                 $(Tipo).modal('hide');
+         }
+
+     </script>--%>
+</head>
+
+<body class="full-width page-condensed">
+    <form class="block-inner" runat="server" id="form1">
+        <!-- Navbar -->
+        <div class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="icon-paragraph-justify2"></i>
+                </button>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right collapse" id="navbar-icons">
+                <li class="user dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <span>
+                            <asp:LoginName ID="LoginName_Usuario" runat="server" ClientIDMode="Static" />
+                        </span>
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right icons-right">
+                        <li><a href="DirectrizSeguridad.aspx"><i class="icon-exit"></i>Logut</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /navbar -->
+        <!-- Page container -->
+
+
+        <!-- Error wrapper -->
+        <div class="error-wrapper text-center">
+            <h1>401</h1>
+            <h6>- Oops, No esta autorizado para ver esta opcion! -</h6>
+            <!-- Error content -->
+            <div class="error-content">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderDescripcion" runat="server">
+                </asp:ContentPlaceHolder>
+
+
+
+
+            </div>
+            <!-- /error content -->
+
+        </div>
+        <!-- /error wrapper -->
+
+
+        <!-- Footer -->
+        <div class="footer clearfix">
+           
+            <div class="pull-right icons-group">
+                <a href="#"><i class="icon-screen2"></i></a>
+                <a href="#"><i class="icon-balance"></i></a>
+                <a href="#"><i class="icon-cog3"></i></a>
+            </div>
+        </div>
+        <!-- /footer -->
+
+    </form>
+</body>
+</html>

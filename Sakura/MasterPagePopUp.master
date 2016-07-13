@@ -1,0 +1,113 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPagePopUp.master.vb" Inherits="MasterPagePopUp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">   
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Spyglass version 1.0</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/londinium-theme.css" rel="stylesheet" type="text/css"/>
+<link href="css/styles.css" rel="stylesheet" type="text/css"/>
+<link href="css/icons.css" rel="stylesheet" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/charts/sparkline.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/uniform.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/select2.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/inputmask.js"></script>
+<script type="text/javascript" src="js/plugins/forms/autosize.js"></script>
+<script type="text/javascript" src="js/plugins/forms/inputlimit.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/listbox.js"></script>
+<script type="text/javascript" src="js/plugins/forms/multiselect.js"></script>
+<script type="text/javascript" src="js/plugins/forms/validate.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/tags.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/switch.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/uploader/plupload.full.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/uploader/plupload.queue.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/wysihtml5/wysihtml5.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/wysihtml5/toolbar.js"></script>
+
+<script type="text/javascript" src="js/plugins/interface/daterangepicker.js"></script>
+<script type="text/javascript" src="js/plugins/interface/fancybox.min.js"></script>
+<script type="text/javascript" src="js/plugins/interface/moment.js"></script>
+<script type="text/javascript" src="js/plugins/interface/jgrowl.min.js"></script>
+<script type="text/javascript" src="js/plugins/interface/datatables.min.js"></script>
+<script type="text/javascript" src="js/plugins/interface/colorpicker.js"></script>
+<script type="text/javascript" src="js/plugins/interface/fullcalendar.min.js"></script>
+<script type="text/javascript" src="js/plugins/interface/timepicker.min.js"></script>
+<script type="text/javascript" src="js/plugins/interface/collapsible.min.js"></script>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/application.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+  <script ="text/javascript" type="text/javascript">
+
+      function CargarValorAsincrono(valor, control) {
+          $(control).val(valor);
+
+      }
+
+
+      function Mensajes(texto, Tipo) {
+          if (Tipo == 1) {
+
+              generate('error', texto);
+          }
+          else if (Tipo == 0) {
+              generate('success', texto);
+          }
+      }
+
+      function generate(type, text) {
+          $(document).ready(function () {
+
+              noty({
+                  layout: 'top',
+                  type: type,
+                  text: text,
+                  dismissQueue: true,
+                  animation: {
+                      open: { height: 'toggle' },
+                      close: { height: 'toggle' },
+                      easing: 'swing',
+                      speed: 300
+                  },
+                  timeout: 7000
+              });
+          });
+      }
+
+
+      function OcultarModal(Tipo, Operacion) {
+          if (Operacion == 1)
+              $(Tipo).modal('show');
+          else
+              $(Tipo).modal('hide');
+      }
+
+     </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <div id="divBackground">
+                </div>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
+
+

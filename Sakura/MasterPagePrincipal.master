@@ -1,0 +1,338 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPagePrincipal.master.vb" Inherits="MasterPagePrincipal" %>
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <link rel="shortcut icon" type="image/ico" href="images/Iconos/ClouAPPS.ico" >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CASA DEL REY::::CONTROL DE ASISTENCIA</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/londinium-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/icons.css" rel="stylesheet" type="text/css">
+    <link href="css/EstiloUtilidades.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/plugins/charts/sparkline.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/uniform.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/select2.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/inputmask.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/autosize.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/inputlimit.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/listbox.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/multiselect.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/validate.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/tags.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/switch.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/uploader/plupload.full.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/uploader/plupload.queue.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/wysihtml5/wysihtml5.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/wysihtml5/toolbar.js"></script>
+
+     <!--Graficos-->
+    <script src="amcharts/amcharts.js"></script>
+    <script src="amcharts/serial.js"></script>
+    <script src="amcharts/themes/patterns.js"></script>
+    <script src="amcharts/themes/light.js"></script>
+    <script src="amcharts/themes/dark.js"></script>
+    <script src="amcharts/themes/chalk.js"></script>
+    <script src="amcharts/themes/black.js"></script>
+    <script src="amcharts/pie.js"></script>
+
+    <script type="text/javascript" src="js/plugins/interface/datatables.min.js"></script>
+    <script type="text/javascript" src="js/plugins/forms/wysihtml5/toolbar.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize.culture.de-DE.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize.culture.ja-JP.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/daterangepicker.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/fancybox.min.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/moment.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/mousewheel.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/jgrowl.min.js"></script>
+    <script src="js/plugins/interface/datatables.min.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/colorpicker.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/timepicker.min.js"></script>
+    <script type="text/javascript" src="js/plugins/interface/collapsible.min.js"></script>
+    <script src="js/plugins/interface/tabletools.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+    <link href="timePicker.css" rel="stylesheet" />
+    <script src="jquery.timePicker.min.js"></script>
+    <script src="jquery.timepicker.js"></script>
+
+
+
+    <!--jQuery Plugins Declarations-->
+    <script src="js/libs/jquery-1.7.1.min.js"></script>
+    <script src="js/libs/jquery-ui-1.8.17.easing.min.js"></script>
+    <script src="js/libs/rainbow/rainbow.js"></script>
+    <script src="js/libs/rainbow/generic.js"></script>
+    <script src="js/libs/rainbow/javascript.js"></script>
+    <script src="js/libs/rainbow/html.js"></script>
+    <script src="js/libs/moment.min.js"></script>
+
+    <script src="js/noty/jquery.noty.js"></script>
+    <script src="js/noty/layouts/bottom.js"></script>
+    <script src="js/noty/layouts/bottomCenter.js"></script>
+    <script src="js/noty/layouts/bottomLeft.js"></script>
+    <script src="js/noty/layouts/bottomRight.js"></script>
+    <script src="js/noty/layouts/center.js"></script>
+    <script src="js/noty/layouts/centerLeft.js"></script>
+    <script src="js/noty/layouts/centerRight.js"></script>
+    <script src="js/noty/layouts/inline.js"></script>
+    <script src="js/noty/layouts/top.js"></script>
+    <script src="js/noty/layouts/topCenter.js"></script>
+    <script src="js/noty/layouts/topLeft.js"></script>
+    <script src="js/noty/layouts/topRight.js"></script>
+    <script src="js/noty/themes/default.js"></script>
+
+
+    
+
+
+    <script ="text/javascript" type="text/javascript">
+        function CargarValorAsincrono(valor, control) {
+            $(control).val(valor);
+
+        }
+
+
+        function ConfirmOnDelete(item) {
+            if (confirm("Estas seguro de eliminar el registro: " + item + "?") == true)
+                return true;
+            else
+                return false;
+        }
+
+        function EliminarElemento(id) {
+
+
+            mySplitResult = id.split("|");
+            for (i = 0; i < mySplitResult.length; i++) {
+                imagen = document.getElementById(mySplitResult[i]);
+                if (!imagen) {
+                    return;
+                } else {
+                    padre = imagen.parentNode;
+                    padre.removeChild(imagen);
+
+                }
+
+            }
+        }
+
+        function Mensajes(texto, Tipo) {
+            if (Tipo == 1) {
+
+                generate('error', texto);
+            }
+            else if (Tipo == 0) {
+                generate('success', texto);
+            }
+        }
+
+        function generate(type, text) {
+            $(document).ready(function () {
+
+                noty({
+                    layout: 'top',
+                    type: type,
+                    text: text,
+                    dismissQueue: true,
+                    animation: {
+                        open: { height: 'toggle' },
+                        close: { height: 'toggle' },
+                        easing: 'swing',
+                        speed: 300
+                    },
+                    timeout: 7000
+                });
+            });
+        }
+
+
+        function OcultarModal(Tipo, Operacion) {
+            if (Operacion == 1)
+                $(Tipo).modal('show');
+            else
+                $(Tipo).modal('hide');
+        }
+
+
+        function PopupCenter(url, title, w, h) {
+            h = 600;
+            w = 1000;
+            // Fixes dual-screen position                         Most browsers      Firefox  
+            var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+            var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+
+            width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+            height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+            var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+            var top = ((height / 2) - (h / 2)) + dualScreenTop;
+            var newWindow = window.open(url, title, 'scrollbars=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+
+            // Puts focus on the newWindow  
+            if (window.focus) {
+                newWindow.focus();
+            }
+
+           
+        }
+
+
+     </script>
+</head>
+
+
+<body class="sidebar-wide">
+    <!-- Navbar -->
+    <form id="form1" runat="server">
+        <div class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="icon-paragraph-justify2"></i>
+                </button>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right collapse" id="navbar-icons">
+                <li class="user dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <span>
+                            <asp:LoginName ID="LoginName_Usuario" runat="server" ClientIDMode="Static" />
+                        </span>
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right icons-right">
+                        <li><a href="DirectrizSeguridad.aspx"><i class="icon-exit"></i>Logut</a></li>
+                        <li><a href="Inicio.aspx"><i class="icon-notebook"></i>Inicio</a></li>
+                          <li><a href="CambiarClave.aspx"><i class="icon-user-block"></i>Cambiar contraseña</a></li>
+                    </ul>
+                   
+                </li>
+            </ul>
+        </div>
+        <!-- /navbar -->
+        <!-- Page container -->
+        <div class="page-container">
+            <!-- Sidebar -->
+            <div class="sidebar collapse">
+                <div class="sidebar-content">
+                    <!-- Main navigation -->
+                    <ul class="navigation" runat="server">
+                        <li id="Administracion">
+                            <a class="expand"><span>Administracion</span> <i class="icon-stack"></i></a>
+                            <ul>
+                                <li><a class="expand">Maestros</a>
+                                    <ul>
+                                        <li><a href="Horarios.aspx">Horarios</a></li>
+                                        <li><a href="TiposdeAsistente.aspx">Tipos de Asistentes</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="CrearServicio.aspx">Tipos de servicios</a></li>
+                            </ul>
+                        </li>
+                        <li id="Ingresos">
+                            <a class="expand"><span>Ingresos</span> <i class="icon-address-book"></i></a>
+                            <ul>
+                                <li><a class="expand">Servicios ordinarios</a>
+                                    <ul>
+                                        <li><a href="RegistrarServicioPorFecha.aspx">Ingresar consolidado</a></li>
+                                        <li><a href="ConsultaServiciosOrdinariosPorFecha.aspx">Edicion consolidados</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="expand">Servicios Especiales</a>
+                                    <ul>
+                                        <li><a href="ServiciosEspeciales.aspx">Ingresar consolidado</a></li>
+                                        <li><a href="ConsultaServiciosEspecialesPorFecha.aspx">Edicion consolidados</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="Usuarios">
+                            <a class="expand"><span>Usuarios</span> <i class="icon-user-plus"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="CrearUsuario.aspx" class="active">Crear usuario</a>
+                                    <a href="EditarUsuarios.aspx" class="active">Editar usuario</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="Reportes">
+                            <a class="expand"><span>Reportes</span> <i class="icon-info"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="AsistentesPorServicio.aspx" class="active">Grafico de asistencia a servicios</a>
+                                    <a href="VehiculosPorFecha.aspx" class="active">Grafico de vehiculos por servico</a>
+                                    <a href="PromediosPorServicio.aspx" class="active">Grafico de promedios por fecha</a>
+                                    <a href="PromediosPorServicio.aspx" class="active">Grafico de servicio especiales por fecha</a>
+                                    <a href="DetalleVehiculosPorFechaServicio.aspx" class="active">Detalle de vehiculos por fecha</a>
+                                    <a href="DetalleAsistenciaPorServicio.aspx" class="active">Detalle de asistentes por fecha</a>
+                                    <a href="DetalleAsistenciaPorServicio.aspx" class="active">Detalle de asistentes en servicios especiales por fecha</a>
+                                    <a href="TotalAsistenciaPorFecha.aspx" class="active">Total asistencia dominical por mes</a>
+                                    <a href="TotalesPorDiaServicio.aspx" class="active">Total asistencia servicio por dia</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- /main navigation -->
+
+                </div>
+            </div>
+            <!-- /sidebar -->
+
+
+            <!-- Page content -->
+            <div class="page-content">
+
+
+                <!-- /breadcrumbs line -->
+
+
+                <!-- Callout -->
+                <div class="callout callout-info">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderDescripcion" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!-- /callout -->
+
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+
+
+
+
+                <!-- Footer -->
+                <div class="footer clearfix">
+                     <div class="pull-left">&copy; 2014.Powered by Cloud Apps Technologies Tel:300-8733099 -(035) 3114664 </div>
+                    <br />
+                     <div class="pull-left"><a href="http://www.cloudappstechnologies.com.co" target="_blank" >www.cloudappstechnologies.com.co</a> </div>                      
+                    <div class="pull-right icons-group">
+                        <i class="icon-screen2"></i>
+                        <i class="icon-balance"></i>
+                        <i class="icon-cog3"></i>
+                    </div>
+                </div>
+                <!-- /footer -->
+
+
+            </div>
+            <!-- /page content -->
+
+        </div>
+        <!-- /content -->
+    </form>
+</body>
+</html>

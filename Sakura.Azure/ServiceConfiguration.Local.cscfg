@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="Sakura.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-01.2.3">
+  <Role name="Sakura">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="administrador" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEG8UARKcik+xRscjMls8fg8wDQYJKoZIhvcNAQEBBQAEggEAbo4LMO3nge4G2HVnAvDVBKdEdAuVOlYxQcRQVWrQxKxAOBByhEP5OmsL5WX9QbWA+ieCFMiI7U/azO6S9fh/zjyvFyq8DCBfUtA/vaol0bSMEwofbraKA+XJ4vMQzEZuNWXuUh2FpJmyMS2172ku47ytcPOx4+ojXeM9ED18omZsgXwv6XhtMGUBbN3lng70LsEx7ynv0e+9lctLeFZCMpELZpATIvUjdijwHgVhxgNzqdEcrPKBUt1apxKWC+C1djN+Ax1U9SRmljWv4UbcktLOTMW2/b1RDtUvekrmxMGA10yNqGjUGNhhpTS0zUKuHMfEOoIrGvv8YAAW0bSXqTAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECEO/AsgYWWNBgBC3C2qVsy/GTAPF0Nn0K8Vn" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2015-07-03T23:59:59.0000000-05:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="84D6838D0353F646496BF782BBE1D12DBE56FE32" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
